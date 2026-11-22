@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JOY Ac sales &amp; service | AC Jet Wash, Repair &amp; Second-Hand AC Karaikal</title>
+<meta name="description" content="JOY Ac sales &amp; service: doorstep AC jet wash, AC repair, certified second-hand AC buying and selling. Call S. Vignesh 8870666503.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #002546;
+    --navy-2: #00355c;
+    --navy-3: #123b63;
+    --blue: #0061a4;
+    --sky: #33a0fd;
+    --sky-soft: #a6c9f9;
+    --ice: #e5eeff;
+    --ice-2: #d1e4ff;
+    --bg: #f8f9ff;
+    --white: #ffffff;
+    --text: #0b1c30;
+    --muted: #43474e;
+    --muted-2: #73777f;
+    --danger-bg: #ffdad6;
+    --danger-text: #93000a;
+    --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    --radius: 14px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3, h4 { font-family: 'Space Grotesk', 'Inter', sans-serif; margin: 0; line-height: 1.15; color: var(--navy); }
+  p { margin: 0; }
+  .wrap { width: min(1216px, calc(100% - 48px)); margin: 0 auto; }
+  .eyebrow {
+    display: inline-block;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--blue);
+  }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+    height: 48px; padding: 0 22px; border-radius: 12px; border: 0; cursor: pointer;
+    font: 600 15px/1 'Inter', sans-serif; transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .btn:hover { transform: translateY(-1px); }
+  .btn-primary { background: var(--blue); color: #fff; box-shadow: 0 6px 16px rgba(0,97,164,0.25); }
+  .btn-primary:hover { background: var(--navy-3); }
+  .btn-outline { background: #fff; color: var(--navy); border: 1px solid var(--ice-2); }
+  .btn-dark { background: var(--navy); color: #fff; }
+  .btn-wa { background: #25D366; color: #fff; }
+  .btn-sm { height: 36px; padding: 0 14px; font-size: 13px; border-radius: 10px; }
+  .card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px;
+    font-size: 12px; font-weight: 600; background: var(--ice); color: var(--navy-3);
+  }
+  .icon { width: 22px; height: 22px; flex: none; }
+  .icon-box {
+    width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center;
+    background: var(--ice); color: var(--blue);
+  }
+  .icon-box svg { width: 26px; height: 26px; }
+  .photo {
+    position: relative; overflow: hidden; border-radius: 14px;
+    background: linear-gradient(135deg, var(--navy-3), var(--sky));
+    aspect-ratio: 4 / 3;
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; }
+  .svc-photo { aspect-ratio: 16 / 10; border-radius: 14px; margin-bottom: 4px; }
+  .why-photo { aspect-ratio: 16 / 10; border-radius: 14px; margin-bottom: 4px; }
+  .svc .photo, .why-card .photo { flex: none; }
+  .photo .photo-label {
+    position: absolute; inset: 0; display: grid; place-items: center; text-align: center;
+    color: #fff; font-weight: 600; padding: 16px;
+  }
+  .photo .photo-label svg { width: 52px; height: 52px; opacity: .9; margin: 0 auto 10px; display: block; }
+
+  /* ---------- Ticker ---------- */
+  .ticker { background: var(--navy); color: #fff; font-size: 13px; }
+  .ticker .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px 0; flex-wrap: wrap; }
+  .ticker .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sky); display: inline-block; margin-right: 10px; box-shadow: 0 0 0 4px rgba(51,160,253,.25); }
+  .ticker a { color: var(--sky-soft); font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+
+  /* ---------- Header ---------- */
+  header.site {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(255,255,255,0.92); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  header.site .wrap { display: flex; align-items: center; justify-content: space-between; height: 80px; gap: 20px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand-mark {
+    width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center;
+    background: linear-gradient(135deg, var(--blue), var(--sky)); color: #fff;
+    font: 700 16px 'Space Grotesk', sans-serif;
+  }
+  .brand-name { font: 700 18px 'Space Grotesk', sans-serif; color: var(--navy); line-height: 1.1; }
+  .brand-tag { font-size: 11px; letter-spacing: .12em; color: var(--muted-2); font-weight: 600; }
+  nav.menu { display: flex; gap: 26px; }
+  nav.menu a { font-size: 14px; font-weight: 500; color: var(--muted); }
+  nav.menu a:hover { color: var(--blue); }
+  .header-cta { display: flex; align-items: center; gap: 12px; }
+  .header-cta .phone { font-weight: 600; font-size: 14px; color: var(--navy); display: inline-flex; gap: 8px; align-items: center; }
+  .menu-toggle { display: none; background: none; border: 0; padding: 8px; cursor: pointer; color: var(--navy); }
+
+  /* ---------- Hero ---------- */
+  .hero { padding: 56px 0 72px; position: relative; overflow: hidden; }
+  .hero::before {
+    content: ""; position: absolute; right: -120px; top: -80px; width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(51,160,253,.22), rgba(51,160,253,0) 70%); pointer-events: none;
+  }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; position: relative; }
+  .hero h1 { font-size: clamp(34px, 4.6vw, 56px); letter-spacing: -0.02em; margin: 16px 0 18px; }
+  .hero h1 span { color: var(--blue); }
+  .hero .lead { font-size: 17px; color: var(--muted); max-width: 580px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+  .trust-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  .trust-badge {
+    display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px;
+    background: #fff; box-shadow: var(--shadow); font-size: 13px; font-weight: 600; color: var(--navy);
+  }
+  .trust-badge svg { width: 18px; height: 18px; color: var(--blue); }
+  .hero-visual { position: relative; }
+  .hero-visual .photo { aspect-ratio: 3 / 2; border-radius: 26px; box-shadow: 0 24px 50px rgba(0,37,70,.18); }
+  .float {
+    position: absolute; background: rgba(255,255,255,.92); backdrop-filter: blur(8px);
+    border-radius: 16px; box-shadow: 0 12px 30px rgba(0,37,70,.14); padding: 12px 14px;
+    display: flex; align-items: center; gap: 12px; min-width: 220px;
+  }
+  .float .float-ico { width: 36px; height: 36px; border-radius: 10px; background: var(--ice); color: var(--blue); display: grid; place-items: center; flex: none; }
+  .float small { display: block; font-size: 11px; color: var(--muted-2); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+  .float strong { font-size: 14px; color: var(--navy); }
+  .float.f1 { top: 22px; left: -28px; }
+  .float.f2 { bottom: 28px; right: -18px; }
+  .locations { margin-top: 18px; font-size: 14px; color: var(--muted); }
+  .locations b { color: var(--navy); }
+
+  /* ---------- Stats ---------- */
+  .stats { background: var(--navy); color: #fff; padding: 34px 0; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; text-align: center; }
+  .stats .num { font: 700 36px 'Space Grotesk', sans-serif; color: #fff; }
+  .stats .lbl { font-size: 13px; color: var(--sky-soft); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; margin-top: 4px; }
+
+  /* ---------- Section base ---------- */
+  section.block { padding: 88px 0; }
+  .sec-head { text-align: center; max-width: 760px; margin: 0 auto 48px; }
+  .sec-head h2 { font-size: clamp(28px, 3.4vw, 40px); margin: 12px 0 14px; letter-spacing: -0.01em; }
+  .sec-head p { color: var(--muted); font-size: 16px; }
+
+  /* ---------- Why Us ---------- */
+  .why-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+  .why-card { padding: 28px 24px; display: flex; flex-direction: column; gap: 14px; height: 100%; }
+  .why-card h3 { font-size: 20px; }
+  .why-card p { color: var(--muted); font-size: 15px; }
+  .why-card .more { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--ice); font-size: 13px; font-weight: 700; color: var(--blue); display: flex; justify-content: space-between; align-items: center; }
+
+  /* ---------- Services ---------- */
+  .services { background: #fff; }
+  .services-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-bottom: 48px; flex-wrap: wrap; }
+  .services-head h2 { font-size: clamp(28px, 3.4vw, 40px); margin-top: 12px; max-width: 640px; }
+  .services-head p { color: var(--muted); max-width: 640px; margin-top: 12px; }
+  .svc-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+  .svc { background: var(--bg); border-radius: 18px; padding: 22px; display: flex; flex-direction: column; gap: 14px; border: 1px solid var(--ice); transition: transform .2s ease, box-shadow .2s ease; }
+  .svc:hover { transform: translateY(-4px); box-shadow: 0 18px 36px rgba(0,37,70,.12); }
+  .svc .tag { align-self: flex-start; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; background: var(--ice); color: var(--navy-3); }
+  .svc .tag.hot { background: var(--blue); color: #fff; }
+  .svc h3 { font-size: 19px; }
+  .svc > p { font-size: 14px; color: var(--muted); }
+  .svc ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 9px; }
+  .svc li { display: flex; gap: 10px; font-size: 13.5px; color: var(--navy-3); align-items: flex-start; }
+  .svc li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--sky); margin-top: 7px; flex: none; }
+  .svc .foot { margin-top: auto; font-size: 12px; color: var(--muted-2); font-weight: 600; padding-top: 14px; border-top: 1px solid var(--ice-2); }
+  .svc .btn { width: 100%; margin-top: 12px; }
+  .svc-wide { grid-column: span 1; }
+
+  /* ---------- Buy / Sell ---------- */
+  .buysell-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+  .bs { padding: 34px; display: flex; flex-direction: column; gap: 18px; border-top: 4px solid var(--blue); }
+  .bs.sell { border-top-color: var(--navy-3); }
+  .bs h3 { font-size: 26px; }
+  .bs > p { color: var(--muted); }
+  .bs ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .bs li { display: flex; gap: 12px; align-items: flex-start; font-size: 15px; color: var(--navy-3); }
+  .bs li .ck { width: 24px; height: 24px; border-radius: 8px; background: var(--ice); color: var(--blue); display: grid; place-items: center; flex: none; }
+  .bs li .ck svg { width: 14px; height: 14px; }
+  .bs-foot { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; border-top: 1px solid var(--ice); padding-top: 18px; margin-top: auto; }
+  .bs-foot .meta small { display: block; color: var(--muted-2); font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+  .bs-foot .meta strong { font: 700 17px 'Space Grotesk', sans-serif; color: var(--navy); }
+  .bs .photo { aspect-ratio: 16 / 8; }
+
+  /* ---------- Visit / Map ---------- */
+  .visit { background: #fff; }
+  .visit-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 22px; align-items: stretch; }
+  .visit-info { padding: 30px; display: flex; flex-direction: column; gap: 14px; }
+  .visit-info h3 { font-size: 22px; }
+  .visit-info p { color: var(--muted); font-size: 15px; }
+  .visit-info ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; font-size: 15px; color: var(--navy-3); }
+  .visit-info li { display: flex; gap: 10px; align-items: flex-start; }
+  .visit-info li svg { width: 18px; height: 18px; color: var(--blue); flex: none; margin-top: 3px; }
+  .visit-info .btn { margin-top: auto; align-self: flex-start; }
+  .map-link { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; min-height: 280px; padding: 30px; text-align: center; color: var(--navy); transition: transform .15s ease; }
+  .map-link:hover { transform: translateY(-2px); }
+  .map-link svg { width: 56px; height: 56px; color: var(--blue); }
+  .map-link strong { font: 700 22px 'Space Grotesk', sans-serif; }
+  .map-link span { color: var(--blue); font-weight: 600; }
+  @media (max-width: 900px) { .visit-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- Reviews ---------- */
+  .reviews { background: var(--ice); }
+  .reviews-cta { text-align: center; margin-top: 28px; }
+  .review .stars-live { color: #f5a623; font-size: 18px; letter-spacing: 2px; }
+  .reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 8px; }
+  .review { padding: 30px; display: flex; flex-direction: column; gap: 16px; }
+  .stars { color: #f5b301; font-size: 16px; letter-spacing: 2px; }
+  .review blockquote { margin: 0; font-size: 15px; color: var(--navy-3); line-height: 1.65; flex: 1; }
+  .review .who { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--ice); padding-top: 16px; gap: 10px; flex-wrap: wrap; }
+  .review .who strong { color: var(--navy); font-size: 14px; display: block; }
+  .review .who small { color: var(--muted-2); font-size: 12px; }
+  .review .svc-pill { font-size: 11px; font-weight: 700; padding: 6px 10px; border-radius: 999px; background: var(--ice); color: var(--navy-3); }
+  .trust-note { text-align: center; margin-top: 30px; font-size: 13px; color: var(--muted); }
+
+  /* ---------- FAQ ---------- */
+  .faq-wrap { max-width: 860px; margin: 0 auto; }
+  details.faq {
+    background: #fff; border-radius: 14px; box-shadow: var(--shadow); margin-bottom: 12px; overflow: hidden;
+  }
+  details.faq summary {
+    list-style: none; cursor: pointer; padding: 20px 24px; font-weight: 600; color: var(--navy);
+    display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 16px;
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary .chev { width: 12px; height: 8px; transition: transform .2s ease; flex: none; color: var(--blue); }
+  details.faq[open] summary .chev { transform: rotate(180deg); }
+  details.faq .ans { padding: 0 24px 20px; color: var(--muted); font-size: 15px; }
+
+  /* ---------- Enquiry Form ---------- */
+  .enquiry { background: var(--bg); }
+  .enq-card {
+    max-width: 880px; margin: 0 auto; background: #fff; border-radius: 24px; padding: 48px;
+    box-shadow: 0 24px 60px rgba(0,37,70,.10); position: relative; overflow: hidden;
+  }
+  .enq-card::before {
+    content: ""; position: absolute; right: -90px; top: -90px; width: 240px; height: 240px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(51,160,253,.18), rgba(51,160,253,0) 70%);
+  }
+  .enq-head { text-align: center; position: relative; margin-bottom: 30px; }
+  .enq-head h2 { font-size: clamp(26px, 3vw, 34px); margin: 12px 0 10px; }
+  .enq-head p { color: var(--muted); max-width: 600px; margin: 0 auto; font-size: 15px; }
+  form#enquiryForm { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .field { display: flex; flex-direction: column; gap: 8px; }
+  .field.full { grid-column: 1 / -1; }
+  .field label { font-size: 13px; font-weight: 600; color: var(--navy-3); }
+  .field .input-wrap { position: relative; display: flex; align-items: center; }
+  .field .input-wrap .lead-ico { position: absolute; left: 14px; width: 18px; height: 18px; color: var(--muted-2); pointer-events: none; }
+  .field input {
+    width: 100%; height: 50px; border-radius: 12px; border: 1px solid #d6dde8; background: #f7f9fd;
+    padding: 0 14px 0 42px; font: 500 15px 'Inter', sans-serif; color: var(--text); outline: none;
+    transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .field select {
+    width: 100%; height: 50px; border-radius: 12px; border: 1px solid #d6dde8; background: #f7f9fd;
+    padding: 0 14px 0 42px; font: 500 15px 'Inter', sans-serif; color: var(--text); outline: none; appearance: auto;
+    transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .field select:focus { border-color: var(--sky); box-shadow: 0 0 0 4px rgba(51,160,253,.18); background: #fff; }
+  .field input::placeholder { color: #9aa1ab; font-weight: 400; }
+  .field input:focus { border-color: var(--sky); box-shadow: 0 0 0 4px rgba(51,160,253,.18); background: #fff; }
+  .phone-prefix {
+    position: absolute; left: 0; top: 0; bottom: 0; width: 64px; display: grid; place-items: center;
+    background: var(--ice); color: var(--navy-3); font-weight: 700; font-size: 14px;
+    border-radius: 12px 0 0 12px; border: 1px solid #d6dde8; border-right: 0;
+  }
+  .field.phone input { padding-left: 80px; }
+  .form-foot { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 14px; margin-top: 6px; }
+  .submit-btn { width: 100%; height: 56px; font-size: 16px; }
+  .submit-btn[disabled] { opacity: .7; cursor: not-allowed; transform: none; }
+  .spinner { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,.4); border-top-color: #fff; border-radius: 50%; animation: spin .8s linear infinite; display: none; }
+  .submit-btn.loading .spinner { display: inline-block; }
+  .submit-btn.loading .btn-text { opacity: .85; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .status {
+    display: none; padding: 14px 16px; border-radius: 12px; font-size: 14px; font-weight: 600; text-align: center;
+  }
+  .status.show { display: block; }
+  .status.ok { background: #dcfce7; color: #166534; }
+  .status.err { background: var(--danger-bg); color: var(--danger-text); }
+  .assure { text-align: center; font-size: 13px; color: var(--muted-2); display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .assure svg { width: 14px; height: 14px; }
+  .direct { margin-top: 10px; text-align: center; font-size: 14px; color: var(--muted); }
+  .direct a { color: var(--blue); font-weight: 700; }
+
+  /* ---------- Contact CTA ---------- */
+  .cta {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-3) 60%, var(--blue) 100%);
+    color: #fff; padding: 88px 0; position: relative; overflow: hidden;
+  }
+  .cta::after {
+    content: ""; position: absolute; right: -120px; top: -120px; width: 420px; height: 420px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(51,160,253,.35), rgba(51,160,253,0) 70%);
+  }
+  .cta .inner { position: relative; text-align: center; max-width: 820px; margin: 0 auto; z-index: 1; }
+  .cta .eyebrow { color: var(--sky-soft); }
+  .cta h2 { color: #fff; font-size: clamp(30px, 4vw, 48px); margin: 14px 0 14px; letter-spacing: -0.02em; }
+  .cta p { color: #cfe3ff; font-size: 17px; }
+  .cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 32px; }
+  .cta .btn-outline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.35); }
+  .cta .btn-outline:hover { background: rgba(255,255,255,.08); }
+  .cta .btn-light { background: #fff; color: var(--navy); }
+  .cta-hours { margin-top: 26px; font-size: 14px; color: var(--sky-soft); display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+
+  /* ---------- Footer ---------- */
+  footer.site-footer { background: var(--navy); color: #bcd0ea; padding: 64px 0 28px; font-size: 14px; }
+  .foot-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 40px; }
+  .foot-grid h4 { color: #fff; font-size: 15px; margin-bottom: 16px; font-family: 'Space Grotesk', sans-serif; }
+  .foot-grid ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+  .foot-grid a:hover { color: #fff; }
+  .foot-grid p { color: #9fb6d6; }
+  .foot-brand .brand-name { color: #fff; }
+  .foot-brand .brand-mark { background: linear-gradient(135deg, var(--sky), var(--blue)); }
+  .foot-contact li { display: flex; gap: 10px; align-items: flex-start; }
+  .foot-contact svg { width: 16px; height: 16px; flex: none; margin-top: 3px; color: var(--sky); }
+  .hours { display: grid; gap: 8px; }
+  .hours div { display: flex; justify-content: space-between; gap: 12px; }
+  .foot-bottom { margin-top: 44px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.1); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: #8aa3c4; }
+  .foot-bottom nav { display: flex; gap: 20px; }
+
+  /* ---------- Floating WhatsApp ---------- */
+  .wa-float {
+    position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 56px; height: 56px; border-radius: 50%;
+    background: #25D366; color: #fff; display: grid; place-items: center; box-shadow: 0 10px 24px rgba(37,211,102,.4);
+  }
+  .wa-float svg { width: 26px; height: 26px; }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 1100px) {
+    .svc-grid { grid-template-columns: repeat(3, 1fr); }
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+    .header-cta .phone { display: none; }
+    nav.menu { gap: 18px; }
+  }
+  @media (max-width: 960px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { max-width: 560px; margin: 0 auto; width: 100%; }
+    .float.f1 { left: 10px; }
+    .float.f2 { right: 10px; }
+    .buysell-grid { grid-template-columns: 1fr; }
+    .reviews-grid { grid-template-columns: 1fr 1fr; }
+    .foot-grid { grid-template-columns: 1fr 1fr; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 800px) {
+    nav.menu { display: none; }
+    .menu-toggle { display: block; }
+    nav.menu.open {
+      display: flex; flex-direction: column; position: absolute; top: 80px; left: 0; right: 0;
+      background: #fff; padding: 18px 24px; gap: 16px; box-shadow: 0 12px 24px rgba(0,0,0,.08);
+    }
+    .header-cta .btn { display: none; }
+    .svc-grid { grid-template-columns: repeat(2, 1fr); }
+    .reviews-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 640px) {
+    .wrap { width: calc(100% - 32px); }
+    section.block { padding: 64px 0; }
+    .hero { padding: 36px 0 56px; }
+    .hero-actions .btn { width: 100%; }
+    .enq-card { padding: 28px 20px; border-radius: 20px; }
+    form#enquiryForm { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .svc-grid { grid-template-columns: 1fr; }
+    .float { min-width: 0; padding: 10px 12px; }
+    .float.f1 { top: 10px; left: 8px; }
+    .float.f2 { bottom: 10px; right: 8px; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .foot-grid { grid-template-columns: 1fr; }
+    .ticker .wrap { justify-content: center; text-align: center; }
+    .bs { padding: 24px; }
+    .bs-foot .btn { width: 100%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== EMERGENCY / RAPID RESPONSE TICKER ===================== -->
+<div class="ticker" id="top">
+  <div class="wrap">
+    <span><span class="dot"></span>Summer Rush Alert: Trusted Doorstep AC Technicians Available Across Your Region</span>
+    <a href="tel:+918870666503">Direct Hotline with S. Vignesh: 8870666503</a>
+  </div>
+</div>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="site">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="JOY Ac sales &amp; service home">
+      <div class="brand-mark" aria-hidden="true">JA</div>
+      <div>
+        <div class="brand-name">JOY Ac sales &amp; service</div>
+        <div class="brand-tag">REPAIR • JET WASH • BUY/SELL</div>
+      </div>
+    </a>
+
+    <nav class="menu" id="menu" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#buy-sell">Buy</a>
+      <a href="#buy-sell">AC</a>
+      <a href="#buy-sell">Sell</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Location</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-cta">
+      <a class="phone" href="tel:+918870666503">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Call: 8870666503
+      </a>
+      <a class="btn btn-primary btn-sm" href="#enquiry">Get a Call Back</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== HERO (#home) ===================== -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="chip">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+        Karaikal Doorstep Service
+      </span>
+      <h1>Complete AC Solutions.<br><span>Reliable Service.</span><br>Better Comfort.</h1>
+      <p class="lead">From precision AC jet washing and circuit diagnostics to buying and selling certified second-hand cooling units, JOY Ac sales &amp; service provides transparent, affordable, and trustworthy climate comfort directly at your doorstep.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#enquiry">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Book AC Service
+        </a>
+        <a class="btn btn-outline" href="#buy-sell">Buy / Sell Used AC</a>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Certified Pro Technicians
+        </div>
+        <div class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          Same Day Service
+        </div>
+        <div class="trust-badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          100% Genuine Spares
+        </div>
+      </div>
+
+      <p class="locations"><b>Service Locations:</b> Karaikal</p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="photo" role="img" aria-label="Professional AC Care technician cleaning a wall-mounted air conditioner filter">
+        <img src="images/photo-01.jpg" alt="Professional AC Care technician cleaning a wall-mounted air conditioner filter" loading="eager" width="1200" height="800" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';">
+        <div class="photo-label" style="display:none;">
+          <div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="6" width="20" height="10" rx="2"/><path d="M6 18v2M18 18v2M6 10h.01M10 10h8"/></svg>
+            Professional AC Care
+          </div>
+        </div>
+      </div>
+
+      <div class="float f1">
+        <div class="float-ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div><small>Warranty</small><strong>5 Months Testing Warranty</strong></div>
+      </div>
+      <div class="float f2">
+        <div class="float-ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+        </div>
+        <div><small>Client Rating</small><strong>4.9 / 5 Stars</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="stats" aria-label="Key figures">
+  <div class="wrap stats-grid">
+    <div><div class="num">4.9 / 5</div><div class="lbl">Client Rating</div></div>
+    <div><div class="num">1000+</div><div class="lbl">ACs Serviced</div></div>
+    <div><div class="num">100%</div><div class="lbl">Clear Transparent Quote</div></div>
+    <div><div class="num">24/7</div><div class="lbl">Emergency Breakdowns</div></div>
+  </div>
+</section>
+
+<!-- ===================== WHY CHOOSE US (#why-us) ===================== -->
+<section class="block" id="why-us">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">The Joy Advantage</span>
+      <h2>Why Choose JOY Ac sales &amp; service</h2>
+      <p>We combine mechanical expertise, specialized clean-wash equipment, and uncompromised honesty so you never overpay for cooling repairs.</p>
+    </div>
+
+    <div class="why-grid">
+      <article class="card why-card">
+        <div class="photo why-photo" role="img" aria-label="Complete AC care diagnostics"><img src="images/photo-02.jpg" alt="Complete AC care diagnostics" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>Complete AC Care</div></div></div>
+        
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.5-.5-.5-2.5z"/></svg>
+        </div>
+        <h3>Complete AC Care</h3>
+        <p>Comprehensive cooling diagnostic checks, precision gas charging, inverter PCB board repairs, copper tubing leak restoration, and seasonal pre-summer tune-ups.</p>
+        <div class="more"><span>Specialist Diagnosticians</span><span aria-hidden="true">→</span></div>
+      </article>
+      <article class="card why-card">
+        <div class="photo why-photo" role="img" aria-label="Multiple AC wash options"><img src="images/photo-03.jpg" alt="Multiple AC wash options" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>Multiple AC Wash Options</div></div></div>
+        
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2.7s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11z"/></svg>
+        </div>
+        <h3>Multiple AC Wash Options</h3>
+        <p>Tailored cleaning choices from basic air filter mesh de-dusting to deep high-pressure chemical foam jet washes using specialized waterproof catch bags to keep walls spotless.</p>
+        <div class="more"><span>Zero Wall Staining</span><span aria-hidden="true">→</span></div>
+      </article>
+      <article class="card why-card">
+        <div class="photo why-photo" role="img" aria-label="Verified second-hand AC units"><img src="images/photo-04.jpg" alt="Verified second-hand AC units" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>Second-Hand AC Sales</div></div></div>
+        
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h18v10H3z"/><path d="M7 12h.01M11 12h6"/></svg>
+        </div>
+        <h3>Second-Hand AC Sales</h3>
+        <p>Thoroughly tested, multi-point verified pre-owned split and window air conditioners at budget-friendly prices. Complete cooling performance reports included.</p>
+        <div class="more"><span>5 Months Testing Warranty</span><span aria-hidden="true">→</span></div>
+      </article>
+      <article class="card why-card">
+        <div class="photo why-photo" role="img" aria-label="Buying used ACs at your doorstep"><img src="images/photo-05.jpg" alt="Buying used ACs at your doorstep" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>We Buy Used ACs</div></div></div>
+        
+        <div class="icon-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+        </div>
+        <h3>We Buy Used ACs</h3>
+        <p>Relocating, renovating, or upgrading to an inverter unit? Receive instantaneous on-the-spot evaluations, fair market cash payments, and safe technician dismounting.</p>
+        <div class="more"><span>Free Doorstep Pickup</span><span aria-hidden="true">→</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OUR SERVICES (#services) ===================== -->
+<section class="block services" id="services">
+  <div class="wrap">
+    <div class="services-head">
+      <div>
+        <span class="eyebrow">What We Do Best</span>
+        <h2>Professional doorstep cooling maintenance</h2>
+        <p>Engineered to maximize airflow throw, decrease electric utility bills, and eliminate stale musty odors.</p>
+      </div>
+      <a class="btn btn-outline" href="#enquiry">Need Installation or Custom Repairs? Consult Our Specialists</a>
+    </div>
+
+    <div class="svc-grid">
+      <article class="svc">
+        <div class="photo svc-photo" role="img" aria-label="Technician washing a normal AC"><img src="images/photo-06.jpg" alt="Technician washing a normal AC" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>Normal AC Wash</div></div></div>
+       
+        <span class="tag">Basic Maintenance</span>
+        <h3>Normal AC Wash</h3>
+        <p>Essential dirt elimination for steady seasonal airflow and smooth compressor cycle.</p>
+        <ul>
+          <li>Sanitation</li>
+          <li>Evaporator coil surface dust extraction</li>
+          <li>Blower wheel dry dusting</li>
+          <li>Grill check</li>
+        </ul>
+        <div class="foot">Quick 30-min doorstep service</div>
+        <a class="btn btn-primary btn-sm" href="#enquiry">Enquire Now</a>
+      </article>
+
+      <article class="svc">
+        <div class="photo svc-photo" role="img" aria-label="AC cover wash and louver cleaning"><img src="images/photo-07.jpg" alt="AC cover wash and louver cleaning" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>AC Cover Wash</div></div></div>
+       
+        <span class="tag hot">Popular Routine Care</span>
+        <h3>AC Cover Wash</h3>
+        <p>Deep casing sanitization to remove trapped allergen grime and damp indoor odors.</p>
+        <ul>
+          <li>Louver detachment</li>
+          <li>Water bath</li>
+          <li>Drain tray condensation cleanse</li>
+          <li>Mild antibacterial deodorizing spray</li>
+        </ul>
+        <div class="foot">Ideal for bi-monthly upkeep</div>
+        <a class="btn btn-primary btn-sm" href="#enquiry">Enquire Now</a>
+      </article>
+
+      <article class="svc">
+        <div class="photo svc-photo" role="img" aria-label="High-pressure jet wash of an AC unit"><img src="images/photo-08.jpg" alt="High-pressure jet wash of an AC unit" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>Full AC Wash (Jet Wash)</div></div></div>
+       
+        <span class="tag">Deep Cleaning</span>
+        <h3>Full AC Wash (Jet Wash)</h3>
+        <p>High-velocity power pump pressure washing with dedicated water catch-jacket.</p>
+        <ul>
+          <li>Coil flush</li>
+          <li>Outdoor condenser unit jet cleansing</li>
+          <li>Complete drain line slime clearance</li>
+          <li>Restores like-new chilling power</li>
+        </ul>
+        <div class="foot">100% Mess-Free Wall Protection</div>
+        <a class="btn btn-primary btn-sm" href="#enquiry">Enquire Now</a>
+      </article>
+
+      <article class="svc">
+        <div class="photo svc-photo" role="img" aria-label="Technician repairing an air conditioner"><img src="images/photo-09.jpg" alt="Technician repairing an air conditioner" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>AC Complaint / Repair</div></div></div>
+       
+        <span class="tag">Emergency Breakdown</span>
+        <h3>AC Complaint / Repair</h3>
+        <p>Rapid troubleshooting for non-cooling units, unexpected tripping, and leaks.</p>
+        <ul>
+          <li>Gas pressure leakage</li>
+          <li>Capacitor testing</li>
+          <li>Indoor unit water dripping remedies</li>
+          <li>Inverter PCB board error diagnostics</li>
+        </ul>
+        <div class="foot">Prompt Doorstep Support</div>
+        <a class="btn btn-primary btn-sm" href="#enquiry">Enquire Now</a>
+      </article>
+
+      <article class="svc">
+        <div class="photo svc-photo" role="img" aria-label="Installing a split AC unit on a wall"><img src="images/photo-10.jpg" alt="Installing a split AC unit on a wall" loading="lazy" width="800" height="600" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';"><div class="photo-label" style="display:none;"><div>AC Installation / Relocation</div></div></div>
+       
+        <span class="tag">Expert Fitting</span>
+        <h3>AC Installation / Relocation</h3>
+        <p>Safe unit mounting, dismounting, and precision piping for split &amp; window air conditioners.</p>
+        <ul>
+          <li>Core drilling</li>
+                    <li>Nitrogen leak check</li>
+          <li>Safe dismantling with gas lock-in</li>
+        </ul>
+        <div class="foot">Mess-free professional setup</div>
+        <a class="btn btn-primary btn-sm" href="#enquiry">Enquire Now</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BUY & SELL USED AC (#buy-sell) ===================== -->
+<section class="block" id="buy-sell">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Certified Pre-Owned AC Marketplace</span>
+      <h2>Buy or sell a used AC with confidence</h2>
+      <p>Skip untrustworthy classifieds. JOY Ac sales &amp; service validates every electrical and refrigerant component before purchase or resale.</p>
+    </div>
+
+    <div class="buysell-grid">
+      <article class="card bs">
+        <span class="chip" style="align-self:flex-start;">Inventory Updated Daily</span>
+        <h3>Buy Second-Hand AC</h3>
+        <p>Affordable, reliable, and energy-efficient used split &amp; window AC units from world-class brands including Daikin, Voltas, LG, Blue Star, Carrier, and Hitachi.</p>
+        <div class="photo" role="img" aria-label="Pre-owned air conditioner unit ready for sale">
+          <img src="images/photo-11.jpg" alt="Pre-owned air conditioner unit ready for sale" loading="lazy" width="1000" height="500" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';">
+          <div class="photo-label" style="display:none;"><div>Verified Second-Hand AC Units</div></div>
+        </div>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Rigorous 30-point compressor, coil, and PCB inspection</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Complimentary piping and installation consultation</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Priced up to 60% lower than brand new showroom models</li>
+        </ul>
+        <div class="bs-foot">
+          <div class="meta"><small>Available Capacities</small><strong>1.0 Ton • 1.5 Ton • 2.0 Ton</strong></div>
+          <a class="btn btn-primary" href="#enquiry">Explore Available ACs</a>
+        </div>
+      </article>
+
+      <article class="card bs sell">
+        <span class="chip" style="align-self:flex-start;">Any Condition Accepted</span>
+        <h3>Sell Your Used AC</h3>
+        <p>Turn your old, working, faulty, or scrap air conditioners into immediate cash without haggling or listing fees.</p>
+        <div class="photo" role="img" aria-label="Buying and selling used air conditioners">
+          <img src="images/photo-12.jpg" alt="Buying and selling used air conditioners" loading="lazy" width="1000" height="500" onerror="this.style.display='none'; this.parentElement.querySelector('.photo-label').style.display='grid';">
+          <div class="photo-label" style="display:none;"><div>Instant Cash / UPI Payment</div></div>
+        </div>
+        <ul>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Careful uninstallation by certified technicians (no wall damage)</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Instant cash / UPI payment on the spot</li>
+          <li><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg></span>Free doorstep pickup with a quick turnaround</li>
+        </ul>
+        <div class="bs-foot">
+          <div class="meta"><small>Turnaround Time</small><strong>Same day pickup</strong></div>
+          <a class="btn btn-dark" href="#enquiry">Get Instant Selling Quote</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CUSTOMER REVIEWS (#reviews) ===================== -->
+<section class="block reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Verified Feedback</span>
+      <h2>What Our Happy Customers Say</h2>
+      <p>Real feedback from residential and commercial clients who experienced JOY Ac sales &amp; service.</p>
+    </div>
+
+    <div class="reviews-grid">
+      <figure class="card review" style="margin:0;">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“The technician was very polite and used a special waterproof bag so not a single drop fell on my living room wall. AC cooling feels brand new after the jet cleaning!”</blockquote>
+        <figcaption class="who">
+          <div><strong>Karthik R.</strong><small>Kottucherry</small></div>
+          <span class="svc-pill">Full Jet Wash</span>
+        </figcaption>
+      </figure>
+
+      <figure class="card review" style="margin:0;">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“Fixed our bedroom split AC that stopped cooling in peak summer heat within 2 hours of calling Vignesh. Transparent explanation of the capacitor issue and very fair pricing.”</blockquote>
+        <figcaption class="who">
+          <div><strong>Priya Sundaram</strong><small>Varichikudy</small></div>
+          <span class="svc-pill">AC Repair</span>
+        </figcaption>
+      </figure>
+
+      <figure class="card review" style="margin:0;">
+        <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote>“Got a perfectly working Daikin 1.5T inverter AC for almost half the showroom retail price with live coil testing done right in front of me. Highly recommend JOY Ac sales &amp; service!”</blockquote>
+        <figcaption class="who">
+          <div><strong>Arun M.</strong><small>Karaikal</small></div>
+          <span class="svc-pill">Bought Used 1.5T AC</span>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="reviews-cta">
+      <a class="btn btn-primary" href="feedback.html">Share Your Feedback</a>
+    </div>
+
+    <p class="trust-note">Verified customer experiences • JOY Ac sales &amp; service takes pride in 100% genuine workmanship.</p>
+  </div>
+</section>
+
+<!-- ===================== FAQ (#faq) ===================== -->
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+      <p>Got questions? Here are honest answers regarding our AC maintenance, jet washing, and refurbished unit guarantees.</p>
+    </div>
+
+    <div class="faq-wrap">
+      <details class="faq" open>
+        <summary>How often should I get my AC washed or serviced?
+          <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></summary>
+        <div class="ans">For most homes we recommend a normal wash every few months during summer, and a full jet wash once a year. Homes with pets, dust, or heavy daily use may benefit from a cover wash every two months.</div>
+      </details>
+      <details class="faq">
+        <summary>What is the difference between Normal Wash, Cover Wash, and Full Jet Wash?
+          <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></summary>
+        <div class="ans">A Normal Wash cleans filters, the evaporator coil surface, and the blower. A Cover Wash also removes the front louvers and cleans the drain tray for deeper sanitization. A Full Jet Wash uses a high-pressure pump and a waterproof catch-jacket to clean the coil and outdoor unit thoroughly, with no mess on your walls.</div>
+      </details>
+      <details class="faq">
+        <summary>Do you provide doorstep second-hand AC inspections before buying?
+          <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></summary>
+        <div class="ans">Yes. Every used unit goes through a rigorous 30-point compressor, coil, and PCB inspection, and you receive a cooling performance report before you pay.</div>
+      </details>
+      <details class="faq">
+        <summary>How quickly can a technician visit my location?
+          <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></summary>
+        <div class="ans">Same-day service is available across our service areas. Emergency breakdowns are handled 24/7, subject to technician availability.</div>
+      </details>
+      <details class="faq">
+        <summary>Do second-hand ACs come with any warranty or testing?
+          <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></summary>
+        <div class="ans">Every refurbished unit comes with a 5 Months Testing Guarantee, backed by live coil testing and a complete cooling performance report.</div>
+      </details>
+      <details class="faq">
+        <summary>What AC brands do you service?
+          <svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></summary>
+        <div class="ans">We work on all major brands, including Daikin, Voltas, LG, Blue Star, Carrier, and Hitachi, using 100% genuine spares.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ENQUIRY / BOOKING FORM (#enquiry) ===================== -->
+<section class="block enquiry" id="enquiry">
+  <div class="wrap">
+    <div class="enq-card">
+      <div class="enq-head">
+        <span class="eyebrow">Direct Assistance</span>
+        <h2>How Can We Help You Today?</h2>
+        <p>Submit your details below and our senior service specialist will contact you promptly to schedule your visit.</p>
+      </div>
+
+      <form id="enquiryForm" novalidate>
+        <div class="field">
+          <label for="name">Your Full Name</label>
+          <div class="input-wrap">
+            <svg class="lead-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            <input id="name" name="name" type="text" placeholder="e.g. Rajesh Kumar" autocomplete="name" maxlength="100" required>
+          </div>
+        </div>
+
+        <div class="field phone">
+          <label for="phone">Mobile Phone Number</label>
+          <div class="input-wrap">
+            <span class="phone-prefix" aria-hidden="true">+91</span>
+            <input id="phone" name="phone" type="tel" inputmode="numeric" placeholder="9876543210" autocomplete="tel" maxlength="14" required>
+          </div>
+        </div>
+
+        <div class="field full">
+          <label for="location">Your Location / Street Area</label>
+          <div class="input-wrap">
+            <svg class="lead-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <input id="location" name="location" type="text" placeholder="e.g., Karaikal, Kottucherry, Varichikudy" autocomplete="street-address" maxlength="150" required>
+          </div>
+          <small style="color:var(--muted-2);font-size:12px;">Service areas: Varichikudy (Karaikal)</small>
+        </div>
+
+        <div class="field full">
+          <label for="service">Service Needed</label>
+          <div class="input-wrap">
+            <svg class="lead-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.5-.5-.5-2.5z"/></svg>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option value="Normal AC Wash">Normal AC Wash</option>
+              <option value="AC Cover Wash">AC Cover Wash</option>
+              <option value="Full AC Wash (Jet Wash)">Full AC Wash (Jet Wash)</option>
+              <option value="AC Complaint / Repair">AC Complaint / Repair</option>
+              <option value="AC Installation / Relocation">AC Installation / Relocation</option>
+              <option value="Buy Second-Hand AC">Buy Second-Hand AC</option>
+              <option value="Sell Used AC">Sell Used AC</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-foot">
+          <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+            <span class="spinner" aria-hidden="true"></span>
+            <span class="btn-text">Schedule AC Service Call</span>
+          </button>
+          <div class="status" id="statusMsg" role="status" aria-live="polite"></div>
+          <div class="assure">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Your details are used only to contact you about your AC request.
+          </div>
+          <p class="direct">Prefer instant phone booking? <a href="tel:+918870666503">Call S. Vignesh: 8870666503</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== VISIT / MAP (#visit) ===================== -->
+<section class="block visit" id="visit">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Find Us</span>
+      <h2>Our Service Area</h2>
+      <p>We come to your doorstep. Check our service area on the map or get directions to Varichikudy.</p>
+    </div>
+    <div class="visit-grid">
+      <div class="card visit-info">
+        <h3>JOY Ac sales &amp; service</h3>
+        <p>Owner managed by S. Vignesh. Doorstep AC jet wash, repair and second-hand AC buying and selling.</p>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Varichikudy, Karaikal</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Mon – Sat: 8:00 AM – 9:00 PM<br>Emergency breakdowns 24/7</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            <a href="tel:+918870666503">8870666503</a>
+          </li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=10.9788944,79.8251939&amp;destination_place_name=Joy+AC+Sales+%26+Service" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+      <a class="card map-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=10.9788944,79.8251939&amp;destination_place_name=JOY+Ac+sales+%26+service" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <strong>JOY Ac sales &amp; service</strong>
+        <span>Open in Google Maps</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT CTA (#contact) ===================== -->
+<section class="cta" id="contact">
+  <div class="wrap inner">
+    <span class="eyebrow">Direct Support Hotline</span>
+    <h2>Quick Call Away!</h2>
+    <p>S. Vignesh: prompt, honest, and high-quality AC service.</p>
+    <div class="cta-actions">
+      <a class="btn btn-light" href="tel:+918870666503">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+        Call Now: 8870666503
+      </a>
+      <a class="btn btn-wa" href="https://wa.me/918870666503" target="_blank" rel="noopener">WhatsApp Us</a>
+      <a class="btn btn-outline" href="mailto:vickyrao8870@gmail.com">vickyrao8870@gmail.com</a>
+    </div>
+    <div class="cta-hours">
+      <span>Mon – Sat: 8:00 AM – 9:00 PM</span>
+      <span>Emergency Breakdowns 24/7</span>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">JA</div>
+          <div class="brand-name">JOY Ac sales &amp; service</div>
+        </div>
+        <p style="margin-top:16px;">Complete Air Conditioner Service, High-Pressure Jet Washing, Routine Maintenance, Gas Charging, and Certified Second-Hand AC Buying &amp; Selling.</p>
+        <p style="margin-top:14px;font-size:13px;color:#8aa3c4;">Satisfaction Guaranteed Doorstep Service</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#buy-sell">Verified Used AC Units</a></li>
+          <li><a href="#buy-sell">Sell Your Old AC</a></li>
+          <li><a href="#contact">Contact Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Owner &amp; Contact</h4>
+        <ul class="foot-contact">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            <div><strong style="color:#fff;">S. Vignesh</strong><br>Owner Managed by S. Vignesh<br>JOY Ac sales &amp; service</div>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+            <a href="tel:+918870666503">8870666503</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:vickyrao8870@gmail.com">vickyrao8870@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Working Hours</h4>
+        <div class="hours">
+          <div><span>Monday – Saturday</span><span>8:00 AM – 9:00 PM</span></div>
+          <div><span>Emergency Breakdowns</span><span>24/7 Available</span></div>
+          <div><span>Service Areas</span><span>Varichikudy (Karaikal)</span></div>
+        </div>
+        <p style="margin-top:14px;font-size:13px;color:#8aa3c4;">Technicians on Duty Now</p>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© JOY Ac sales &amp; service. All rights reserved. Managed by S. Vignesh.</span>
+      <nav aria-label="Legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Inspection Warranty</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== FLOATING WHATSAPP ===================== -->
+<a class="wa-float" href="https://wa.me/918870666503" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8.9-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2a.5.5 0 0 0 0-.5l-.7-1.7c-.2-.4-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.6 2.6 0 0 0-.8 2 4.5 4.5 0 0 0 .9 2.4 10.3 10.3 0 0 0 4 3.6c1.5.6 2.1.7 2.8.6a2.4 2.4 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c-.1-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<!-- ===================== SCRIPT ===================== -->
+<script>
+(function () {
+  "use strict";
+
+  // Your Apps Script Web App URL (ends in /exec)
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwQjPXUvwcK7TuhoeMoH49DeXunL0DwH0WPlgYFOnNEHn1GSeJYewpMpuCb7H1Rwe2M/exec";
+
+  var form = document.getElementById("enquiryForm");
+  var submitBtn = document.getElementById("submitBtn");
+  var btnText = submitBtn.querySelector(".btn-text");
+  var statusMsg = document.getElementById("statusMsg");
+  var isSubmitting = false;
+
+  // Mobile menu toggle
+  var menuToggle = document.getElementById("menuToggle");
+  var menu = document.getElementById("menu");
+  menuToggle.addEventListener("click", function () {
+    var open = menu.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  menu.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      menu.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  function showStatus(text, type) {
+    statusMsg.textContent = text;
+    statusMsg.className = "status show " + (type === "ok" ? "ok" : "err");
+  }
+
+  function setLoading(on) {
+    isSubmitting = on;
+    submitBtn.disabled = on;
+    submitBtn.classList.toggle("loading", on);
+    btnText.textContent = on ? "Submitting..." : "Schedule AC Service Call";
+  }
+
+  function showSuccess() {
+    setLoading(false);
+    showStatus("Thank you! We have received your request and will call you back soon.", "ok");
+    form.reset();
+  }
+
+  function showError() {
+    setLoading(false);
+    showStatus("Sorry, we could not send your request. Please check your connection or call 8870666503.", "err");
+  }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Prevent multiple submissions while one is processing
+    if (isSubmitting) return;
+
+    var name = document.getElementById("name").value.trim();
+    var location = document.getElementById("location").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var service = document.getElementById("service").value;
+
+    // Basic checks before sending
+    if (!name || !location || !phone || !service) {
+      showStatus("Please fill in your name, mobile number, location and select a service.", "err");
+      return;
+    }
+    if (phone.replace(/\D/g, "").length < 10) {
+      showStatus("Please enter a valid 10-digit mobile number.", "err");
+      return;
+    }
+
+    statusMsg.className = "status";
+    setLoading(true);
+
+    // Build URL: SCRIPT_URL + "?" + name/location/phone query params
+    var url = SCRIPT_URL + "?" + new URLSearchParams({ name: name, location: location, phone: phone, service: service });
+
+    fetch(url, { method: "GET", mode: "no-cors" })
+      .then(function () { showSuccess(); })
+      .catch(function () { showError(); });
+  });
+})();
+
+// ----- Live customer reviews (only rows marked Approved = Yes in the Feedback sheet) -----
+(function () {
+  var grid = document.querySelector("#reviews .reviews-grid");
+  if (!grid) return;
+  var url = "https://script.google.com/macros/s/AKfycbwQjPXUvwcK7TuhoeMoH49DeXunL0DwH0WPlgYFOnNEHn1GSeJYewpMpuCb7H1Rwe2M/exec" + "?action=reviews";
+  fetch(url)
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      if (!data || data.status !== "success" || !data.reviews) return;
+      data.reviews.forEach(function (rv) {
+        var fig = document.createElement("figure");
+        fig.className = "card review";
+        fig.style.margin = "0";
+
+        var stars = document.createElement("div");
+        stars.className = "stars-live";
+        var n = Math.max(1, Math.min(5, Number(rv.rating) || 5));
+        stars.textContent = "\u2605".repeat(n) + "\u2606".repeat(5 - n);
+        stars.setAttribute("aria-label", n + " out of 5 stars");
+
+        var q = document.createElement("blockquote");
+        q.textContent = "\u201C" + rv.comment + "\u201D";
+
+        var cap = document.createElement("figcaption");
+        cap.className = "who";
+        var left = document.createElement("div");
+        var strong = document.createElement("strong");
+        strong.textContent = rv.name;
+        var small = document.createElement("small");
+        small.textContent = rv.date || "";
+        left.appendChild(strong);
+        left.appendChild(small);
+        cap.appendChild(left);
+        if (rv.service) {
+          var pill = document.createElement("span");
+          pill.className = "svc-pill";
+          pill.textContent = rv.service;
+          cap.appendChild(pill);
+        }
+
+        fig.appendChild(stars);
+        fig.appendChild(q);
+        fig.appendChild(cap);
+        grid.appendChild(fig);
+      });
+    })
+    .catch(function () { /* if it fails, the page simply keeps its existing reviews */ });
+})();
+</script>
+
+</body>
+</html>

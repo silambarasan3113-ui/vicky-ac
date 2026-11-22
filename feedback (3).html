@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Share Your Feedback | JOY Ac sales &amp; service</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #f3f7fb; color: #1b2a3a; }
+  .card { background: #fff; width: 100%; max-width: 480px; border-radius: 16px; padding: 28px; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+  .brand { font-size: 13px; font-weight: 600; color: #1e6fd9; letter-spacing: .04em; text-transform: uppercase; }
+  h1 { font-size: 22px; margin: 6px 0 4px; }
+  .sub { color: #5b6b7d; font-size: 14px; margin: 0 0 18px; }
+  label { display: block; font-size: 14px; font-weight: 600; margin: 14px 0 6px; }
+  input, select, textarea { width: 100%; padding: 11px 12px; border: 1px solid #d3dce6; border-radius: 10px; font-size: 15px; font-family: inherit; }
+  textarea { min-height: 90px; resize: vertical; }
+  .stars { display: flex; gap: 6px; font-size: 36px; cursor: pointer; user-select: none; }
+  .stars span { color: #c8d2dd; }
+  .stars span.on { color: #f5a623; }
+  .rating-text { font-size: 13px; color: #5b6b7d; min-height: 18px; margin-top: 4px; }
+  button { margin-top: 22px; width: 100%; padding: 13px; border: 0; border-radius: 10px; background: #1e6fd9; color: #fff; font-size: 16px; font-weight: 600; cursor: pointer; }
+  button:disabled { opacity: .6; cursor: default; }
+  .msg { margin-top: 14px; font-size: 14px; padding: 12px; border-radius: 10px; display: none; }
+  .msg.err { display: block; background: #fdecec; color: #9b1c1c; }
+  .thanks { text-align: center; padding: 20px 0; }
+  .thanks .tick { font-size: 56px; color: #17a34a; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<div class="card">
+
+  <div id="formView">
+    <div class="brand">JOY Ac sales &amp; service</div>
+    <h1>How was our service?</h1>
+    <p class="sub">Your feedback helps us serve you better. It takes less than a minute.</p>
+
+    <form id="fbForm" novalidate>
+      <label for="name">Your name *</label>
+      <input id="name" type="text" maxlength="100" required>
+
+      <label for="phone">Mobile number *</label>
+      <input id="phone" type="tel" maxlength="20" placeholder="10-digit mobile number" required>
+
+      <label for="service">Service you received</label>
+      <select id="service">
+        <option value="">Select a service</option>
+        <option value="Normal AC Wash">Normal AC Wash</option>
+        <option value="AC Cover Wash">AC Cover Wash</option>
+        <option value="Full AC Wash (Jet Wash)">Full AC Wash (Jet Wash)</option>
+        <option value="AC Complaint / Repair">AC Complaint / Repair</option>
+        <option value="AC Installation / Relocation">AC Installation / Relocation</option>
+        <option value="Buy Second-Hand AC">Buy Second-Hand AC</option>
+        <option value="Sell Used AC">Sell Used AC</option>
+      </select>
+
+      <label for="serviceDate">Date of service</label>
+      <input id="serviceDate" type="date">
+
+      <label>Your rating *</label>
+      <div class="stars" id="stars" aria-label="Rating">
+        <span data-v="1">&#9733;</span><span data-v="2">&#9733;</span><span data-v="3">&#9733;</span><span data-v="4">&#9733;</span><span data-v="5">&#9733;</span>
+      </div>
+      <div class="rating-text" id="ratingText">Tap a star</div>
+      <input type="hidden" id="rating" value="0">
+
+      <label for="comments">Comments (optional)</label>
+      <textarea id="comments" maxlength="1000" placeholder="Tell us what went well or what we can improve"></textarea>
+
+      <button type="submit" id="submitBtn">Submit Feedback</button>
+      <div class="msg" id="msg"></div>
+    </form>
+  </div>
+
+  <div class="thanks hidden" id="thanksView">
+    <div class="tick">&#10003;</div>
+    <h1>Thank you!</h1>
+    <p class="sub">Your feedback has been received. We appreciate you choosing JOY Ac sales &amp; service.</p>
+  </div>
+
+</div>
+
+<script>
+  // Same Apps Script URL as index.html
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwQjPXUvwcK7TuhoeMoH49DeXunL0DwH0WPlgYFOnNEHn1GSeJYewpMpuCb7H1Rwe2M/exec";
+
+  var labels = ["", "Poor", "Fair", "Good", "Very good", "Excellent"];
+  var starEls = document.querySelectorAll("#stars span");
+  var ratingInput = document.getElementById("rating");
+  var ratingText = document.getElementById("ratingText");
+
+  function setRating(v) {
+    ratingInput.value = v;
+    starEls.forEach(function (s) {
+      s.classList.toggle("on", Number(s.dataset.v) <= v);
+    });
+    ratingText.textContent = labels[v] || "Tap a star";
+  }
+  starEls.forEach(function (s) {
+    s.addEventListener("click", function () { setRating(Number(s.dataset.v)); });
+  });
+
+  var form = document.getElementById("fbForm");
+  var msg = document.getElementById("msg");
+  var btn = document.getElementById("submitBtn");
+
+  function showError(text) {
+    msg.textContent = text;
+    msg.className = "msg err";
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    msg.className = "msg";
+
+    var name = document.getElementById("name").value.trim();
+    var phone = document.getElementById("phone").value.trim();
+    var rating = parseInt(ratingInput.value, 10) || 0;
+
+    if (!name || !phone) return showError("Please enter your name and mobile number.");
+    if (phone.replace(/\D/g, "").length < 10) return showError("Please enter a valid 10-digit mobile number.");
+    if (!rating) return showError("Please tap a star rating.");
+
+    var params = new URLSearchParams({
+      type: "feedback",
+      name: name,
+      phone: phone,
+      service: document.getElementById("service").value,
+      serviceDate: document.getElementById("serviceDate").value,
+      rating: String(rating),
+      comments: document.getElementById("comments").value.trim()
+    });
+
+    btn.disabled = true;
+    btn.textContent = "Sending...";
+
+    fetch(SCRIPT_URL + "?" + params.toString(), { method: "GET", mode: "no-cors" })
+      .then(function () {
+        form.classList.add("hidden");
+        document.getElementById("formView").classList.add("hidden");
+        document.getElementById("thanksView").classList.remove("hidden");
+      })
+      .catch(function () {
+        showError("Could not send your feedback. Please check your internet and try again.");
+        btn.disabled = false;
+        btn.textContent = "Submit Feedback";
+      });
+  });
+</script>
+</body>
+</html>
